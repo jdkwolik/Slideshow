@@ -1,0 +1,60 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background: #75AC17;*/
+  background: #3DA7C3;
+}
+.container{
+  background-color: green;
+  flex: 0 0 80%;
+  min-height: 70vh;
+  border-radius: 20px;
+  background: url('img/puppy-0.jpg')center/cover no-repeat;
+  box-shadow: 5px 8px #23384B;
+  position: relative;
+}
+h2{
+  text-align: center;
+  text-transform: capitalize;
+  font: 3rem avenir next, sans-serif;
+  font-weight: bold;
+  color: #FFFF00;
+  margin-top: 0.5rem;
+}
+.button{
+  display: inline-block;
+  font: 1.5rem avenir next, sans-serif;
+  font-weight: bold;
+  color: #23384B;
+  background-color: white;
+  border: #23384B solid 0.5px;
+  border-radius: 50%;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  box-shadow: 2px 3px #23384B;
+  outline: none;
+}
+#prevButton{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+#nextButton{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.button:hover{
+  background: #23384B;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 3px #383838;
+}
+.button:active{
+  border: white solid 2px;
+  box-shadow: none;
+}
